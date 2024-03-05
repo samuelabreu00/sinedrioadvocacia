@@ -97,7 +97,7 @@ header nav.container-header .contato p{
     height: 3px;
     margin: 5px auto;
     transition: .3s ease-in-out;
-    background-image: url('../assets/backGold.jpg');
+    background-image: url('../../assets/backGold.jpg');
     background-size: 100%;
     border-radius: 6px;
 }
