@@ -1,0 +1,42 @@
+.container-titles h1{
+    background-image: linear-gradient(to right, #d2a86b, #c88c33, #c27e17);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: #d2a86b;
+
+    font-size: 48px;
+    letter-spacing: 8px;
+
+    text-align: center;
+
+    display: flex;
+}
+.container-titles h2{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    text-align: center;
+}
+.container-titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    cursor: default;
+}
+
+@media (max-width:570px){
+    .container-titles h1{
+        font-size: 33px;
+    }
+}
+@media (max-width:400px){
+    .container-titles h1{
+        font-size: 20px;
+    }
+}

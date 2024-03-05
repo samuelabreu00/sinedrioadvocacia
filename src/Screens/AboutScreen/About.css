@@ -1,0 +1,91 @@
+section.about{
+    padding: 5rem 0;
+    cursor: default;
+}
+section.about .container-about{
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: content-box;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;    
+
+}
+section.about .container-about img{
+    width: 100%;
+}
+section.about .container-about .content-about{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+section.about .container-about .content-about h1.title{
+    font-size: 52px;
+    background-image: linear-gradient(to bottom, #d2a86b, #d69a40, #673e00);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: #d2a86b;
+}
+section.about .container-about .content-about .container-text{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+section.about .container-about .content-about .container-text .boxText h2{
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 40px;
+}
+section.about .container-about .content-about .container-text .boxText p{
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+section.about .container-about a{
+    display: block;
+    background-image: url('../assets/backGold.jpg');
+    background-size: cover;
+    text-align: center;
+    margin-top: 3rem;
+
+    text-decoration: none;
+    padding: 1.2rem;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #000;
+
+    transition: .3s;
+}
+section.about .container-about a:hover{
+    opacity: .8;
+}
+
+@media (max-width:1010px) {
+    section.about .container-about img{
+       width: 40%;
+    }
+}
+
+@media (max-width:830px){
+    section.about .container-about{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:650px){
+    section.about .container-about a{
+        font-size: 16px;
+    }
+}
+@media (max-width:400px){
+    section.about .container-about a{
+        font-size: 12px;
+    }
+    section.about .container-about .content-about h1.title{
+        font-size: 35px;
+    }
+}

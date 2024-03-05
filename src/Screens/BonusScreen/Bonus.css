@@ -1,0 +1,136 @@
+section.bonus{
+    padding: 8rem 0;
+    cursor: default;
+}
+section.bonus .container-bonus{
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: content-box;
+
+}
+section.bonus .container-bonus main{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+section.bonus .container-bonus main .box{
+    width: 100%;
+}
+section.bonus .container-bonus main .box1{
+    background-image: url('../../assets/backGold.jpg');
+    background-size: cover;
+    padding: 2rem 1rem;
+    border-radius: 25px;
+}
+section.bonus .container-bonus main .box1 h1{
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 4px;
+    margin-bottom: 22px;
+}
+section.bonus .container-bonus main .box1 .boxText{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+section.bonus .container-bonus main .box1 .boxText .text{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+section.bonus .container-bonus main .box1 .boxText .text p{
+    font-size: 20px;
+}
+
+section.bonus .container-bonus main .box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .5rem;
+    
+}
+section.bonus .container-bonus main .box2 .subBox{
+    border: 1px solid #d2a86b;
+    border-radius: 25px;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+section.bonus .container-bonus main .box2 .subBox h1{
+    background-image: linear-gradient(to right, #d2a86b, #c88c33, #c27e17);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: #d2a86b;
+    font-size: 27px;
+}
+
+section.bonus .container-bonus main .box2 .subBox2{
+    border: 1px dashed #d2a86b;
+    border-radius: 25px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  
+}
+section.bonus .container-bonus main .box2 .subBox2 h1{
+    font-size: 27px;
+    background-image: linear-gradient(to right, #d2a86b, #c88c33, #c27e17);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: #d2a86b;
+}
+section.bonus .container-bonus main .box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    border-radius: 25px;
+    background-color: rgba(57, 57, 57, 0.126);
+}
+section.bonus .container-bonus main .box3 img{
+    width: 200px;
+   
+}
+section.bonus .container-bonus main .box3 .img1{
+    transform: translate(50px, -50px);
+}
+section.bonus .container-bonus main .box3 .img2{
+    transform: translate(-50px, 50px);
+}
+
+@media (max-width:1110px) {
+    section.bonus .container-bonus main .box3 img{
+        width: 150px;
+    }
+}
+
+@media (max-width:1010px) {
+
+    section.bonus .container-bonus main{
+        flex-direction: column;
+    }
+}
+@media (max-width:400px){
+    section.bonus .container-bonus main .box1 h1{
+        font-size: 23px;
+    }
+    section.bonus .container-bonus main .box2 .subBox h1, 
+    section.bonus .container-bonus main .box2 .subBox2 h1{
+        font-size: 19px;
+    }
+    section.bonus .container-bonus main .box3 {
+       display: none;
+    }
+    section.bonus .container-bonus main .box1 h2{
+        font-size: 20px;
+    }
+}

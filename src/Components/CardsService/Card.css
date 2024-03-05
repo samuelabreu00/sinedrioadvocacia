@@ -1,0 +1,28 @@
+.card{
+    background-image: url('../../assets/backGold.jpg');
+    background-size: cover;
+    width: 30%;
+    padding: 1rem 3rem;
+    border-radius: 13px;
+    cursor: default;
+}
+.card .title-card{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 12px;
+}
+.card .title-card .icon{
+    font-size: 50px;
+}
+.card p{
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+@media (max-width:830px){
+    .card{
+        width: 100%;
+    }
+} 

@@ -1,0 +1,55 @@
+section.depositions{
+    padding: 2rem 0;
+    cursor: default;
+}
+section.depositions .container-depositions{
+    max-width: 1350px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 24px;
+    color: #fff;
+
+    min-height: 60vh;
+}
+section.depositions .container-depositions .container-card{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1rem;
+
+    height: 100%;
+}
+section.depositions .container-depositions .container-card .container-miniCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.depositions .container-depositions .container-card .content-miniCards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-height: 50vh;
+    overflow-x: auto;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;;
+    padding: 20px 12px 20px 0;
+    border-radius: 10px;
+
+}
+section.depositions .container-depositions .container-card .content-miniCards::-webkit-scrollbar{
+    background-color: transparent;
+    border:1px solid #d2a86b;
+    width: 10px;
+    border-radius: 20px;
+}
+section.depositions .container-depositions .container-card .content-miniCards::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 20px;
+    
+}
+
+@media (max-width:900px) {
+    section.depositions .container-depositions .container-card{
+        flex-direction: column;
+    }
+}

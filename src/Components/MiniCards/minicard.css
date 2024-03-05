@@ -1,0 +1,51 @@
+.miniCard{
+    background-color:#0c0c0c;
+    padding: 1.3rem 1rem;
+    border-radius: 25px;
+    border: 1px solid #d2a86b;
+}
+.miniCard .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 17px;
+    margin-bottom: 1rem;
+}
+.miniCard .top h3{
+    font-size: 14px ;
+    letter-spacing: 2px;
+}
+.miniCard .top .stars{
+    display: flex;
+}
+.miniCard .top .star{
+    
+    margin: 1rem 0;
+    background-image: linear-gradient(to right, #d2a86b, #c88c33, #c27e17);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: #f1a533;
+
+}
+.miniCard p{
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+@media (max-width:900px) {
+    .miniCard .top h3{
+        font-size: 20px;
+    }
+    .miniCard p{
+        font-size: 17px;
+    }
+}
+@media (max-width:400px){
+    .miniCard .top h3{
+        font-size: 14px;
+    }
+    .miniCard p{
+        font-size: 11px;
+    }
+}

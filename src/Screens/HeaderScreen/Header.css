@@ -1,0 +1,186 @@
+header{
+    padding: 2rem 0;
+    
+}
+
+header nav.container-header{
+    max-width: 1350px;
+    box-sizing: content-box;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header nav.container-header ul{
+    display: flex; 
+    align-items: center;
+    gap: 2.5rem;
+}
+header nav.container-header ul li{
+    list-style: none;
+}
+header nav.container-header ul li a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+
+}
+header nav.container-header ul li a.colorGold{
+    background-image: linear-gradient(to bottom, #d2a86b, #d69a40, #673e00);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: #d2a86b;
+    letter-spacing: 0;
+
+    
+}
+header a.displayBlock{
+    background-image: linear-gradient(to bottom, #d2a86b, #d69a40, #673e00);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: #d2a86b;
+    letter-spacing: 0;
+
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    opacity: .3;
+
+    display: none;
+}
+
+header nav.container-header .contato{
+    border: 1px solid #d2a86b;
+    padding: 1rem ;
+    border-radius: 10px;
+}
+header nav.container-header a{
+    color: rgb(198, 159, 14);
+    text-decoration: none;
+}
+header nav.container-header a.none{
+    display: none;
+}
+
+header nav.container-header .contato{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+header nav.container-header .contato p{
+    letter-spacing: 1px;
+    background-image: linear-gradient(to bottom, #d2a86b, #d69a40, #673e00);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    color: #d2a86b;
+
+    text-align: center;
+}
+
+.container-hamburguer{
+    display: none;
+}
+.hamburguer{
+    cursor: pointer;
+    background-color: #00000082;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+.bar{
+    display: block;
+    width: 1.8rem;
+    height: 3px;
+    margin: 5px auto;
+    transition: .3s ease-in-out;
+    background-image: url('../assets/backGold.jpg');
+    background-size: 100%;
+    border-radius: 6px;
+}
+@media (max-width:670px){
+    header a.displayBlock{
+        display: block;
+    }
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        padding: 1rem 0;
+    }
+    header .container-header ul{
+        gap: 1.2rem !important;
+    }
+    header .container-hamburguer{
+        display: block;
+        position: relative;
+       z-index: 2;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+       border-radius: 5px;
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        border-radius: 5px;
+     }
+     .nav-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #fff;
+      flex-direction: column;
+      justify-content: center;
+        height: 40%;
+        width: 100%;
+        z-index: 1;
+        transition: .6s;
+        overflow: hidden;
+        transform: translateY(-100%);
+
+        
+    }
+    .nav-menu li{
+        font-size: 20px;
+        text-align: center !important;
+        border-bottom: 1px solid #d2a86b;
+        
+    }
+    .nav-menu li a{
+        background-image: linear-gradient(to bottom, #d2a86b, #d69a40, #673e00);
+        background-clip: text;
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+        color: #d2a86b;
+        font-size: 18px;
+        font-weight: bold;
+    }
+   
+    .nav-menu.active{
+        transform: translateY(0%);
+        padding: 12px 2rem;
+        box-shadow: 1px 5px 15px 1px #000000;
+    }
+    header nav.container-header a.none{
+        display: block;
+    }
+     
+    header nav.container-header a.block{
+        display: none;
+    }
+    header nav.container-header .contato{
+        margin-top: 1rem;
+    }
+    header nav.container-header .contato p{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
