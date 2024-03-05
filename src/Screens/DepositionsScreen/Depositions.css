@@ -30,7 +30,11 @@ section.depositions .container-depositions .container-card .content-miniCards{
     gap: 2rem;
     max-height: 50vh;
     overflow-x: auto;
-    padding-right: 12px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;;
+    padding: 20px 12px 20px 0;
+    border-radius: 10px;
+
 }
 section.depositions .container-depositions .container-card .content-miniCards::-webkit-scrollbar{
     background-color: transparent;
