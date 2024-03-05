@@ -110,7 +110,7 @@ section.home .container-atendimento .atendimento a:hover{
 
 @media (max-width:650px){
     section.home .container-atendimento .atendimento a{
-        font-size: 19px;
+        font-size: 12px;
     }
     section.home .legend{
         display: none;
@@ -120,13 +120,16 @@ section.home .container-atendimento .atendimento a:hover{
         font-size: 60px;
     }
     section.home .container-home{
-        padding-top: 7rem;
+        padding-top: 3rem;
     }
+    section.home .container-atendimento .text p{
+        font-size:10px;
+    }
+  
 } 
 @media (max-width:570px){
-    section.home .container-atendimento .text p{
-        font-size: 16px;
-    }
+    
+    
     section.home .container-atendimento .atendimento a{
         width: auto;
         padding: 1rem;
