@@ -8,7 +8,7 @@
 }
 body{
   background-color: #000;
-  background-image: url('./Components/assets/backgroundLawerPNG.png');
+  background-image: url('../../assets/backgroundLawerPNG.png');
   background-size: 100%;
   background-repeat: no-repeat;
 
