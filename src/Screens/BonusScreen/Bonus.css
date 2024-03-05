@@ -119,13 +119,22 @@ section.bonus .container-bonus main .box3 .img2{
         flex-direction: column;
     }
 }
+@media (max-width:650px){
+    section.bonus .container-bonus main .box1 .boxText .text p{
+        font-size: 10px;
+    }
+    section.bonus .container-bonus main .box1 .boxText .text h2{
+        font-size: 12px;
+    }
+
+}
 @media (max-width:400px){
     section.bonus .container-bonus main .box1 h1{
         font-size: 23px;
     }
     section.bonus .container-bonus main .box2 .subBox h1, 
     section.bonus .container-bonus main .box2 .subBox2 h1{
-        font-size: 19px;
+        font-size: 12px;
     }
     section.bonus .container-bonus main .box3 {
        display: none;
