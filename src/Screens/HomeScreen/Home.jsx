@@ -27,7 +27,7 @@ export const Home =()=>{
      data-aos-duration="900">VOCÊ FICA POR DENTRO DE TUDO</p>
                 </div>
 
-                <div className="container-atendimento" data-aos="fade-up">
+                <div className="container-atendimento">
                     <div className="text">
                         <p
     >ADVOGADOS COMPROMETIDOS COM A <span>EXCELÊNCIA</span> E SUA BUSCA POR JUSTIÇA. <br />
@@ -35,7 +35,7 @@ export const Home =()=>{
                         </p>
                     </div>
 
-                    <div className="atendimento" data-aos="fade-down"
+                    <div className="atendimento"
      >
                         <a href=""><div className="button-atendimento"><p>SEJA ATENDIDO RAPIDAMENTE</p></div></a>
                     </div>
